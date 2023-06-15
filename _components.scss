@@ -1,0 +1,179 @@
+$font-btn:600;
+$color-primary: #666E7E;
+$color-secundary:#116EEF;
+.busuu-icon{
+    box-shadow: 10px 3px 10px 0px  #666E7E;
+    border: none;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 0.1rem;
+    img{
+        display: flex;
+        flex-direction: row;
+        width: 10rem;
+        padding: 0.2rem;
+        margin: 0.2rem;
+        flex: 0.12;
+    }
+}
+.title{
+    font-weight: 700;
+    font-size: 1.7rem;
+    padding: 2.3rem;
+}
+
+.buttons{
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.google-btn{
+    display: flex;
+    border: 1px solid gray;
+    height: 3rem;
+    border-radius: 30px;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: white;
+    width: 20rem;
+    &:hover{
+        opacity: 0.75;
+    }
+    picture{
+        width: 2.8rem;
+        height: 2.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 10px;
+    }
+    img{
+        width: 80%;
+    }
+    span{
+        margin-left: 2rem;
+        font-weight: $font-btn;
+    }
+
+}
+
+.facebook-btn{
+    display: flex;
+    border: 1px solid gray;
+    height: 3rem;
+    border-radius: 30px;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: white;
+    width: 20rem;
+    &:hover{
+        opacity: 0.75;
+    }
+    picture{
+        height: 2.8rem;
+        width: 2.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 10px;
+    }
+    img{
+        width: 90%;
+    }
+    span{
+        font-weight: $font-btn;
+        margin-left: 2rem;
+    }
+}
+
+.separator{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    hr{
+        color: #666E7E;
+        width: 100%;
+        border: 1px solid #666E7E;
+    }
+    span{
+        margin: 1rem;
+        color: #666E7E;
+        font-weight: 600;
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        margin: 0.25rem;
+
+        label{
+            display: flex;
+            flex-direction: column;
+            font-weight: 600;
+            
+            span{
+                color: $color-primary;
+                margin-bottom: 0.30rem;
+            }
+        }
+
+        .link a{
+            display: flex;
+            flex-direction: column;
+           margin: 10px;
+           color: $color-secundary;
+           font-weight: $font-btn;
+           &:hover{
+            opacity: 0.75;
+           }
+        }
+
+        input{
+            padding: 0.4rem;
+            width: 18rem;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-bottom: 8px;
+            outline: none;
+
+            &:focus{
+                border: 1px solid $color-secundary;
+            }
+        }
+        
+    }
+
+    .submit{
+        margin-top:10px;
+        font-weight: $font-btn;
+        padding: 0.8rem;
+        border: none;
+        background-color: $color-secundary;
+        color: white;
+        border-radius: 30px;
+        font-size: 17px;
+        gap: 20px;
+        &:hover{
+            opacity: 0.75;
+        }
+    }
+}
+
